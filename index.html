@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>stopwatch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="stopwatch.png">
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="carouselOne item">
+            <div class="subcontainerTime">
+                <p class="time hours">00</p>
+                <div class="boxColon colonHours">
+                    <p class="colon">•</p>
+                    <p class="colon">•</p>
+                </div>
+                <p class="time minutes">00</p>
+                <div class="boxColon">
+                    <p class="colon">•</p>
+                    <p class="colon">•</p>
+                </div>
+                <p class="time seconds">00</p>
+                    <p class="comma">,</p>
+                <p class="time milliseconds">00</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="carouselTwo item">
+            <div class="clock">
+                <div class="clockTime"><p>00:00<span class="comaClock">,</span>00</p></div>
+        
+                <div class="min">
+                    <div class="mn" id="mn"></div>
+                </div>
+        
+                <div class="secLap">
+                    <div class="scLap" id="scLap"></div>
+                </div>
+        
+                <div class="sec">
+                    <div class="sc" id="sc"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+    <div class="subcontainerButton">
+      <div class="boxBtn boxBtnLap">
+          <button class="btnLap">Lap</button>
+      </div>
+  
+      <div class="boxBtn boxBtnLapActiv">
+          <button class="btnLapActiv">Lap</button>
+      </div>
+  
+      <div class="boxBtn boxBtnReset">
+          <button class="btnReset">Reset</button>
+      </div>
+
+
+      <div class="boxBtn boxBtnStart">
+          <button class="btnStart">Start</button>
+      </div>
+  
+      <div class="boxBtn boxBtnStop">
+          <button class="btnStop">Stop</button>
+      </div>
+    </div>
+    <div class="boxLapHeader"><p>Lap 1</p><p>00:00,00</p></div>
+    <div class="containerLap"></div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
